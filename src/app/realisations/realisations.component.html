@@ -1,0 +1,453 @@
+<div id="TopPage"></div>
+<br>
+
+
+<h1 class="text-center text-decoration-underline mt-5 fw-bold">{{title}}:</h1>
+
+<!-- Utilisations d'Onglets (Angular Material) pour répertorier les réalisations en fonction des technologies utilisées -->
+<div class="ods-box mt-2">
+    <mat-tab-group>
+
+        <!--/////HTML + CSS-->
+        <mat-tab label={{onglet1}}>
+            <div class="ods-box1">
+                <h2 class="text-center mt-2">{{onglet1}}</h2>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <!-- Carte de référence -->
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title-group>
+                                    <mat-card-title>Galerie Photo</mat-card-title>
+                                    <mat-card-subtitle>(Extra large)</mat-card-subtitle>
+                                    <img mat-card-lg-image
+                                        src="./assets/réalisations/Screenshot 2022-11-30 at 13-28-09 Galerie des animaux de la forêt.png">
+                                </mat-card-title-group>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <app-voir-plus [text]="textGalerie" [limit]="100"></app-voir-plus>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a href="https://www.mesprojets.yvesmbenzedi.fr/Galerie-photo" target="blank"><button
+                                        mat-button>Galerie Photo</button></a>
+                            </mat-card-actions>
+                        </mat-card>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title-group>
+                                    <mat-card-title>Choco-boom</mat-card-title>
+                                    <mat-card-subtitle>Media Queries</mat-card-subtitle>
+                                    <img mat-card-lg-image src="./assets/réalisations/Choco Boom New.png">
+                                </mat-card-title-group>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <app-voir-plus [text]="textChocoBoom" [limit]="100"></app-voir-plus>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a href="https://www.mesprojets.yvesmbenzedi.fr/Choco-boom/" target="blank">
+                                    <button mat-button>Choco-boom</button></a>
+                            </mat-card-actions>
+                        </mat-card>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title-group>
+                                    <mat-card-title>Journal du Web</mat-card-title>
+                                    <mat-card-subtitle>SCSS</mat-card-subtitle>
+                                    <img mat-card-lg-image src="./assets/réalisations/Le Journal du Web.png">
+                                </mat-card-title-group>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <app-voir-plus [text]="textJDW" [limit]="100"></app-voir-plus>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a href="https://www.mesprojets.yvesmbenzedi.fr/LeJDW/" target="blank">
+                                    <button mat-button>Le Journal du Web</button></a>
+                            </mat-card-actions>
+                        </mat-card>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title-group>
+                                    <mat-card-title>L'histoire des Jeux Vidéos</mat-card-title>
+                                    <mat-card-subtitle>Bootstrap</mat-card-subtitle>
+                                    <img mat-card-lg-image src="./assets/réalisations/L'Histoire des Jeux Video.png">
+                                </mat-card-title-group>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <app-voir-plus [text]="textGameStory" [limit]="100"></app-voir-plus>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a href="https://www.mesprojets.yvesmbenzedi.fr/Gamestory/" target="blank">
+                                    <button mat-button>L'Histoire du jeu</button></a>
+                            </mat-card-actions>
+                        </mat-card>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title-group>
+                                    <mat-card-title>ACDC</mat-card-title>
+                                    <mat-card-subtitle>Bootstrap</mat-card-subtitle>
+                                    <img mat-card-lg-image src="./assets/réalisations/AC_DC.png">
+                                </mat-card-title-group>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <app-voir-plus [text]="textACDC" [limit]="100"></app-voir-plus>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a href="https://www.mesprojets.yvesmbenzedi.fr/ACDC/" target="blank">
+                                    <button mat-button>ACDC</button></a>
+                            </mat-card-actions>
+                        </mat-card>
+                    </div>
+
+                </div>
+
+            </div>
+        </mat-tab>
+
+        <!--/////JS-->
+        <mat-tab label={{onglet2}}>
+            <div class="ods-box1">
+                <h2 class="text-center mt-2">{{onglet2}}</h2>
+
+                <div class="row">
+                    <!-- Carte de référence -->
+                    <!--les impots-->
+                    <div class="col-lg-4 col-md-4">
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title-group>
+                                    <mat-card-title>Les Impots</mat-card-title>
+                                    <mat-card-subtitle>JavaScript</mat-card-subtitle>
+                                    <img mat-card-lg-image src="./assets/réalisations/js/Les impots.png">
+                                </mat-card-title-group>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <app-voir-plus [text]="textImpots" [limit]="100"></app-voir-plus>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a href="https://www.mesprojets.yvesmbenzedi.fr/impots/" target="blank">
+                                    <button mat-button>Les Impots</button></a>
+                            </mat-card-actions>
+                        </mat-card>
+                    </div>
+                    <!--Reprographie-->
+                    <div class="col-lg-4 col-md-4">
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title-group>
+                                    <mat-card-title>Reprographie</mat-card-title>
+                                    <mat-card-subtitle>JavaScript</mat-card-subtitle>
+                                    <img mat-card-lg-image src="./assets/réalisations/js/2Tarif reprograhie.png">
+                                </mat-card-title-group>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <app-voir-plus [text]="textReprographie" [limit]="100"></app-voir-plus>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a href="https://www.mesprojets.yvesmbenzedi.fr/Reprographie/" target="blank">
+                                    <button mat-button>Reprographie</button></a>
+                            </mat-card-actions>
+                        </mat-card>
+                    </div>
+                    <!--l'heure dans une seconde-->
+                    <div class="col-lg-4 col-md-4">
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title-group>
+                                    <mat-card-title>L'horloge</mat-card-title>
+                                    <mat-card-subtitle>JavaScript</mat-card-subtitle>
+                                    <img mat-card-lg-image src="./assets/réalisations/js/3Les heures.png">
+                                </mat-card-title-group>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <app-voir-plus [text]="textHorloge" [limit]="100"></app-voir-plus>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a href="https://www.mesprojets.yvesmbenzedi.fr/Horloge" target="blank">
+                                    <button mat-button>L'horloge</button></a>
+                            </mat-card-actions>
+                        </mat-card>
+                    </div>
+                    <!--La caisse enregistreuse-->
+                    <div class="col-lg-4 col-md-4">
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title-group>
+                                    <mat-card-title>La Caisse</mat-card-title>
+                                    <mat-card-subtitle>JavaScript</mat-card-subtitle>
+                                    <img mat-card-lg-image src="./assets/réalisations/js/4Monnaie à rendre.png">
+                                </mat-card-title-group>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <app-voir-plus [text]="textCaisse" [limit]="100"></app-voir-plus>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a href="https://www.mesprojets.yvesmbenzedi.fr/caisse" target="blank">
+                                    <button mat-button>La Caisse Enregistreuse</button></a>
+                            </mat-card-actions>
+                        </mat-card>
+                    </div>
+                    <!--Adresse mail valide-->
+                    <div class="col-lg-4 col-md-4">
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title-group>
+                                    <mat-card-title>Validité d'une adresse mail</mat-card-title>
+                                    <mat-card-subtitle>JavaScript</mat-card-subtitle>
+                                    <img mat-card-lg-image src="./assets/réalisations/js/5Adresse m@il v@lide.png">
+                                </mat-card-title-group>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <app-voir-plus [text]="textMailValide" [limit]="100"></app-voir-plus>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a href="https://www.mesprojets.yvesmbenzedi.fr/MailValide" target="blank">
+                                    <button mat-button>Validité adresse mail</button></a>
+                            </mat-card-actions>
+                        </mat-card>
+                    </div>
+                    <!--Assurances-->
+                    <div class="col-lg-4 col-md-4">
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title-group>
+                                    <mat-card-title>Tarif Assurance</mat-card-title>
+                                    <mat-card-subtitle>JavaScript</mat-card-subtitle>
+                                    <img mat-card-lg-image src="./assets/réalisations/js/6assurance.png">
+                                </mat-card-title-group>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <app-voir-plus [text]="textAssu" [limit]="100"></app-voir-plus>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a href="https://www.mesprojets.yvesmbenzedi.fr/assurances" target="blank">
+                                    <button mat-button>L'assurance</button></a>
+                            </mat-card-actions>
+                        </mat-card>
+                    </div>
+                    <!--robustesse du mdp-->
+                    <div class="col-lg-4 col-md-4">
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title-group>
+                                    <mat-card-title>Fiabilité du mdp</mat-card-title>
+                                    <mat-card-subtitle>JavaScript</mat-card-subtitle>
+                                    <img mat-card-lg-image
+                                        src="./assets/réalisations/js/7Vérification fiabilité du mdp.png">
+                                </mat-card-title-group>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <app-voir-plus [text]="textMDP" [limit]="100"></app-voir-plus>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a href="https://www.mesprojets.yvesmbenzedi.fr/fiabilitéMDP" target="blank">
+                                    <button mat-button>Fiabilité du mdp</button></a>
+                            </mat-card-actions>
+                        </mat-card>
+                    </div>
+                    <!--Le juste prix-->
+                    <div class="col-lg-4 col-md-4">
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title-group>
+                                    <mat-card-title>Le Juste Prix</mat-card-title>
+                                    <mat-card-subtitle>JavaScript</mat-card-subtitle>
+                                    <img mat-card-lg-image src="./assets/réalisations/js/8Le juste Prix.png">
+                                </mat-card-title-group>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <app-voir-plus [text]="textJustePrix" [limit]="100"></app-voir-plus>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a href="https://www.mesprojets.yvesmbenzedi.fr/juste-prix" target="blank">
+                                    <button mat-button>Le Juste Prix</button></a>
+                            </mat-card-actions>
+                        </mat-card>
+                    </div>
+                    <!--Le pendu-->
+                    <div class="col-lg-4 col-md-4">
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title-group>
+                                    <mat-card-title>Le Pendu</mat-card-title>
+                                    <mat-card-subtitle>JavaScript</mat-card-subtitle>
+                                    <img mat-card-lg-image src="./assets/réalisations/js/9Le pendu.png">
+                                </mat-card-title-group>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <app-voir-plus [text]="textPendu" [limit]="100"></app-voir-plus>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a href="https://www.mesprojets.yvesmbenzedi.fr/pendu" target="blank">
+                                    <button mat-button>Le Pendu</button></a>
+                            </mat-card-actions>
+                        </mat-card>
+                    </div>
+                    <!--Mon CV Bilingue-->
+                    <div class="col-lg-4 col-md-4">
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title-group>
+                                    <mat-card-title>Mon CV Bilingue (Fr/Eng)</mat-card-title>
+                                    <mat-card-subtitle>JavaScript</mat-card-subtitle>
+                                    <img mat-card-lg-image src="./assets/réalisations/js/Mon CV Multi.png">
+                                </mat-card-title-group>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <app-voir-plus [text]="textCVbilingue" [limit]="100"></app-voir-plus>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a href="https://www.mesprojets.yvesmbenzedi.fr/CvMulti" target="blank">
+                                    <button mat-button>Mon Cv Bilingue</button></a>
+                            </mat-card-actions>
+                        </mat-card>
+                    </div>
+                </div>
+
+            </div>
+        </mat-tab>
+
+        <!--/////Php-->
+        <mat-tab label={{onglet3}}>
+            <div class="ods-box1">
+                <h2 class="text-center mt-2">{{onglet3}}</h2>
+                7
+                <div class="row">
+                    <!-- Carte de référence -->
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title-group>
+                                <mat-card-title>A venir</mat-card-title>
+                                <mat-card-subtitle>En cours</mat-card-subtitle>
+                                <img mat-card-lg-image src="./assets/réalisations/Php/en cours.jpg">
+                            </mat-card-title-group>
+                        </mat-card-header>
+                        <mat-card-content>
+                            Mes Réalisations incluant du php seront bientot visibles sur cet onglet 
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <a href="" target="blank">
+                                <button mat-button>Projet PHP</button>
+                            </a>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+            </div>
+        </mat-tab>
+
+        <!--Angular-->
+        <mat-tab label={{onglet4}}>
+            <div class="ods-box1">
+                <h2 class="text-center mt-2">{{onglet4}}</h2>
+
+                <div class="row">
+                    <!--MYUKA-->
+                    <div class="col-lg-4 col-md-4">
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title-group>
+                                    <mat-card-title>Myuka</mat-card-title>
+                                    <mat-card-subtitle>Angular + API</mat-card-subtitle>
+                                    <img mat-card-lg-image src="./assets/réalisations/Angular/MYUKA.png">
+                                </mat-card-title-group>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <app-voir-plus [text]="textMyuka" [limit]="100"></app-voir-plus>
+
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a href="https://www.mesprojets.yvesmbenzedi.fr/myuka" target="blank">
+                                    <button mat-button>Myuka</button></a>
+                            </mat-card-actions>
+                        </mat-card>
+                    </div>
+
+                    <!--Les capitales-->
+                    <div class="col-lg-4 col-md-4">
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title-group>
+                                    <mat-card-title>Les Capitales</mat-card-title>
+                                    <mat-card-subtitle>Angular + API</mat-card-subtitle>
+                                    <img mat-card-lg-image src="./assets/réalisations/Angular/Capitales.png">
+                                </mat-card-title-group>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <app-voir-plus [text]="textCapitale" [limit]="100"></app-voir-plus>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a href="https://www.mesprojets.yvesmbenzedi.fr/Capitales" target="blank">
+                                    <button mat-button>Les Capitales</button></a>
+                            </mat-card-actions>
+                        </mat-card>
+                    </div>
+
+                </div>
+            </div>
+        </mat-tab>
+
+
+        <!--Symfony-->
+        <mat-tab label={{onglet5}}>
+            <div class="ods-box1">
+                <h2 class="text-center mt-2">{{onglet5}}</h2>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+
+                        <!-- Carte de référence -->
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title-group>
+                                    <mat-card-title>Localiser Adresse</mat-card-title>
+                                    <mat-card-subtitle>Symfony + Ajax</mat-card-subtitle>
+                                    <img mat-card-lg-image src="./assets/réalisations/Symfony/LocaliserAdresse.jpeg">
+                                </mat-card-title-group>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <app-voir-plus [text]="textLocaliser" [limit]="100"></app-voir-plus>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a href="https://mesprojets.yvesmbenzedi.fr/Symfony/localisation/public/"
+                                    target="blank"><button mat-button>Afficher Localisation</button></a>
+                            </mat-card-actions>
+                        </mat-card>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+
+                        <!-- Progica(fil rouge formation)-->
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title-group>
+                                    <mat-card-title>Progica</mat-card-title>
+                                    <mat-card-subtitle>Symfony</mat-card-subtitle>
+                                    <img mat-card-lg-image
+                                        src="./assets/réalisations/Symfony/Progica Liste des gîtes.png">
+                                </mat-card-title-group>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <app-voir-plus [text]="textProgica" [limit]="100"></app-voir-plus>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a href="https://mesprojets.yvesmbenzedi.fr/Symfony/progica/public/"
+                                    target="blank"><button mat-button>Progica</button></a>
+                            </mat-card-actions>
+                        </mat-card>
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>

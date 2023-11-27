@@ -1,0 +1,55 @@
+
+.piechart1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: conic-gradient(orange 0 216deg, aliceblue 0);
+}
+
+.piechart2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: conic-gradient(red 0 288deg, aliceblue 0);
+}
+
+.piechart3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: conic-gradient(green 0 288deg, aliceblue 0);
+}
+
+.piechart4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: conic-gradient(blue 0 252deg, aliceblue 0);
+}
+
+.piechart5 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: conic-gradient(yellow 0 288deg,
+            aliceblue 0);
+}

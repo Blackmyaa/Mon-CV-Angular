@@ -1,0 +1,23 @@
+span{
+    width: 135px;
+}
+
+button{
+    background-color: #3f51b5;
+    color: white;
+}
+.mini-font{
+    font-size:x-small;
+}
+
+
+.onTop{
+margin-top: -15px;
+margin-left: 135px;
+}
+
+.onTop2{
+    margin-top: -15px;
+    margin-left: 55px;
+
+}

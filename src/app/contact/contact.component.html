@@ -1,0 +1,68 @@
+<div id="TopPage"></div><br>
+
+<h1 class="text-center text-decoration-underline mt-5 fw-bold">{{title}}:</h1>
+<div class="ods-box mt-2">
+
+
+    <!-- Coordonnées -->
+    <div class="row">
+        <div class="col-lg-1 col-md-1"></div>
+
+        <div class="col-lg-3 col-md-3 text-center mt-2">
+            <fa-icon [icon]="faMobileScreen"></fa-icon> : 06.26.70.34.26
+        </div>
+
+        <div class="col-lg-4 col-md-4 text-center mt-2">
+            <fa-icon [icon]="faEnvelope"></fa-icon>:
+            <a href="mailto:ymbenzedi@gmail.com?subject=Votre profil nous interesse">ymbenzedi@gmail.com</a>
+        </div>
+
+        <div class="col-lg-3 col-md-3 text-center mt-2">
+            <div class="mt-2"><fa-icon [icon]="faLinkedinIn"></fa-icon>
+                : <a href="https://www.linkedin.com/in/yves-mbenzedi-0a492bb3" target="blank">Linkedin</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- formulaire de contact -->
+    <form [formGroup]="form" action="javascript:void(0)" (submit)="send()">
+        <!--Cet opérateur permet d'évaluer des expressions retournant une valeur là où on attend une expression qui vaut undefined . L'opérateur void est souvent utilisé pour obtenir la valeur undefined , généralement avec " void(0) " (qui est l'équivalent de " void 0 ")-->
+
+        <!-- inserer le [formGroup]="form" directement dans la balise <form> -->
+        <div class="col-lg-8 col-md-8 col-sm-10 mx-auto mt-5">
+            <div class="input-group mb-3">
+                <span class="input-group-text">Nom/Prénom</span>
+                <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom" formControlName="nom"
+                    required>
+                <!-- [(ngModel)] Ne peut pas etre mis dans la meme balise que formControlName -->
+                <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Prénom"
+                    formControlName="prenom" required>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">Em@il/Tél</span>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Adresse m@il"
+                    formControlName="email" required>
+                <input type="tel" class="form-control" id="tel" name="tel" placeholder="Téléphone" formControlName="tel"
+                    required>
+            </div>
+
+
+            <!-- textarea  -->
+            <div class="input-group mb-3">
+                <span class="input-group-text">Votre message:</span>
+                <textarea formControlName="message" class="form-control" maxlength="1000" id="message" name="message"
+                    [(ngModel)]="text" rows="4" placeholder="Votre message, 1000 caractères max" required></textarea>
+            </div>
+
+            <!--  affichage du nombre de caracteres restants -->
+            <span class="text-dark mini-font">Caractères restants: {{1000-text.length}}</span>
+
+            <!--Création du bouton-->
+            <div class="text-end">
+                <button type="submit" class="btn" id="submit" [disabled]="!form.valid">Envoyer</button>
+                <!--Désactivation du bouton qui devient incliquable tant que le formulaire dont [formGroup]="form" n'est pas valide (tout les champs "required" doivent être remplis)-->
+            </div>
+        </div>
+    </form>
+</div>

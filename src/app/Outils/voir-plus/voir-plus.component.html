@@ -1,0 +1,9 @@
+<span *ngIf="text.length <= limit">{{text}}</span>
+
+<span *ngIf="text.length > limit && !voirPlus">
+    {{text.substring(0, limit)}}... <a class="text-primary" (click)="voirPlus = true">voir plus</a>
+</span>
+
+<span *ngIf="text.length > limit && voirPlus">
+    {{text}} <a class="text-primary" (click)="voirPlus = false">voir moins</a>
+</span>
